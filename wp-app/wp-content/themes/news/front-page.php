@@ -4,15 +4,18 @@
 if (have_posts()):
   while (have_posts()):
     the_post(); ?>
-    <img src="<?= the_post_thumbnail_url("large") ?>" alt=""/>
-
-    <h1>
+    <div class="heroContainer">
+    <img class="heroImage" src="<?= the_post_thumbnail_url("large") ?>" alt="">
+    <div class="heroContent">
+    <h1 id="title">
       <?php the_title(); ?>
     </h1>
     <p>
       <?php the_content(); ?>
     </p>
-    <h2>Hej</h2>
+  </div>
+  </img>
+  </div>
 
   <?php endwhile; ?>
 <?php endif; ?>

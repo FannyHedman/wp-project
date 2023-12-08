@@ -16,7 +16,6 @@ if (have_posts()):
         <p>
           <?php the_content(); ?>
         </p>
-        <h2>Hej från sida med länkar</h2>
       </div>
       <div class="col-xs-12 col-md-4">
         <?php

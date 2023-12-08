@@ -10,13 +10,17 @@
 </head>
 
 <body>
-  <div class="navbarContainer">
-    <p class="brandName">Tech news today</p>
-    <ul class="navLinks">
-      <?php
-      wp_nav_menu(
-        array('theme_location' => 'primary')
-      );
-      ?>
-    </ul>
-  </div>
+  <nav class="nav">
+    <div class="navbarContainer">
+      <div class="headerContainer">
+        <p class="brandName">Tech news today</p>
+      </div>
+      <ul class="navLinks">
+        <?php
+        wp_nav_menu(
+          array('theme_location' => 'primary')
+        );
+        ?>
+      </ul>
+    </div>
+  </nav>

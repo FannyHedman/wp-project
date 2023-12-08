@@ -1,15 +1,7 @@
 <?php get_header();?>
-<main>
-  <section>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-9">
-          <h1><?php single_post_title();?></h1>
-        </div>
-      </div>
-
-      <div class="row">
-          <div class="col-xs-12 col-md-9">
+          <div class="col-xs-12" id="searchBox">
         <?php
         if(have_posts()) : while (have_posts()) : the_post();?>
 
@@ -37,13 +29,7 @@
         <?php endwhile; ?>
         <?php endif; ?>
         </div>
-        <aside class="col-xs-12 col-md-3">
-          <?php get_sidebar();?>
-        </aside>
-
         </div>
     </div>
-  </section>
-</main>
 
 <?php get_footer();?>

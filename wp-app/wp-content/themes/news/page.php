@@ -11,7 +11,6 @@ if (have_posts()):
       <p>
         <?php the_content(); ?>
       </p>
-      <h2>Hej</h2>
     </div>
 
   <?php endwhile; ?>
